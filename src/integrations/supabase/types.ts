@@ -14,7 +14,96 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      favorites: {
+        Row: {
+          created_at: string
+          genres: string[] | null
+          id: string
+          overview: string | null
+          poster_path: string | null
+          rating: number | null
+          release_year: number | null
+          title: string
+          tmdb_id: number
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          genres?: string[] | null
+          id?: string
+          overview?: string | null
+          poster_path?: string | null
+          rating?: number | null
+          release_year?: number | null
+          title: string
+          tmdb_id: number
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          genres?: string[] | null
+          id?: string
+          overview?: string | null
+          poster_path?: string | null
+          rating?: number | null
+          release_year?: number | null
+          title?: string
+          tmdb_id?: number
+          user_id?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          created_at: string
+          display_name: string | null
+          id: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          created_at?: string
+          display_name?: string | null
+          id?: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          avatar_url?: string | null
+          created_at?: string
+          display_name?: string | null
+          id?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      search_history: {
+        Row: {
+          created_at: string
+          detected_genres: string[]
+          id: string
+          mood_text: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          detected_genres: string[]
+          id?: string
+          mood_text: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          detected_genres?: string[]
+          id?: string
+          mood_text?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

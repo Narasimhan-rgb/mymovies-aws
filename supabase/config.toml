@@ -1,1 +1,7 @@
 project_id = "vedjxchqcfvgierloxus"
+
+[functions.mood-to-genre]
+verify_jwt = false
+
+[functions.tmdb-proxy]
+verify_jwt = false
