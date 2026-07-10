@@ -1,73 +1,62 @@
-# Welcome to your Lovable project
+# MyMovies AWS
 
-## Project info
+> A React-based movie recommendation and discovery frontend built with Vite, TypeScript, Supabase integration, and a modern shadcn/Tailwind UI stack.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Project purpose
 
-## How can I edit this code?
+MyMovies AWS is a portfolio project for demonstrating frontend engineering, API-driven product design, authentication-ready architecture, and cloud-deployment readiness for a movie recommendation use case.
 
-There are several ways of editing your application.
+The project is useful for showing:
 
-**Use Lovable**
+- React + TypeScript frontend development
+- Component-based UI design
+- Supabase-ready backend integration
+- Search, favourites, and recommendation-style product flow
+- AWS/cloud deployment preparation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Tech stack
 
-Changes made via Lovable will be committed automatically to this repo.
+| Layer | Tools |
+|---|---|
+| Frontend | React, Vite, TypeScript |
+| UI | shadcn-ui, Tailwind CSS, Radix UI |
+| State/data | TanStack Query |
+| Backend-ready integration | Supabase |
+| Testing | Vitest |
 
-**Use your preferred IDE**
+## Local setup
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```cmd
+git clone https://github.com/Narasimhan-rgb/mymovies-aws.git
+cd mymovies-aws
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open the local URL shown by Vite, usually:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```text
+http://localhost:5173
+```
 
-**Use GitHub Codespaces**
+## Useful commands
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```cmd
+npm run dev       # Start local development server
+npm run build     # Create production build
+npm run lint      # Run lint checks
+npm run test      # Run tests
+npm run preview   # Preview production build locally
+```
 
-## What technologies are used for this project?
+## MS portfolio value
 
-This project is built with:
+This project supports my MS profile by demonstrating practical product engineering: clean frontend architecture, cloud-ready deployment skills, and the ability to convert an AI/API idea into a usable web interface.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Roadmap
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- Add clearer TMDB/movie API documentation
+- Add screenshots and deployed demo link
+- Add architecture diagram
+- Add environment variable guide
+- Document AWS deployment flow
