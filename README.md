@@ -1,62 +1,13 @@
-# MyMovies AWS
+# MyMovies — movie discovery and mood recommendations
 
-> A React-based movie recommendation and discovery frontend built with Vite, TypeScript, Supabase integration, and a modern shadcn/Tailwind UI stack.
+React/TypeScript movie discovery app with Supabase authentication, favorites, TMDB proxy and a mood-to-genre edge function.
 
-## Project purpose
+## Run locally
 
-MyMovies AWS is a portfolio project for demonstrating frontend engineering, API-driven product design, authentication-ready architecture, and cloud-deployment readiness for a movie recommendation use case.
+Copy `.env.example` to `.env.local`; fill the public Supabase URL and publishable key. Run `npm ci`, `npm run dev`, `npm run build`, and `npm run test`. Configure your Supabase project and deploy the checked-in edge functions separately.
 
-The project is useful for showing:
+## Status and limits
 
-- React + TypeScript frontend development
-- Component-based UI design
-- Supabase-ready backend integration
-- Search, favourites, and recommendation-style product flow
-- AWS/cloud deployment preparation
+Live functionality requires your Supabase project, migration, TMDB_API_KEY and LOVABLE_API_KEY edge-function secrets. Never place these server secrets in VITE variables. No AWS deployment is verified by the repository name. An AWS static deployment must serve dist and route SPA navigation to index.html; backend functions remain separately hosted.
 
-## Tech stack
-
-| Layer | Tools |
-|---|---|
-| Frontend | React, Vite, TypeScript |
-| UI | shadcn-ui, Tailwind CSS, Radix UI |
-| State/data | TanStack Query |
-| Backend-ready integration | Supabase |
-| Testing | Vitest |
-
-## Local setup
-
-```cmd
-git clone https://github.com/Narasimhan-rgb/mymovies-aws.git
-cd mymovies-aws
-npm install
-npm run dev
-```
-
-Open the local URL shown by Vite, usually:
-
-```text
-http://localhost:5173
-```
-
-## Useful commands
-
-```cmd
-npm run dev       # Start local development server
-npm run build     # Create production build
-npm run lint      # Run lint checks
-npm run test      # Run tests
-npm run preview   # Preview production build locally
-```
-
-## MS portfolio value
-
-This project supports my MS profile by demonstrating practical product engineering: clean frontend architecture, cloud-ready deployment skills, and the ability to convert an AI/API idea into a usable web interface.
-
-## Roadmap
-
-- Add clearer TMDB/movie API documentation
-- Add screenshots and deployed demo link
-- Add architecture diagram
-- Add environment variable guide
-- Document AWS deployment flow
+See [REPOSITORY_STATUS.md](REPOSITORY_STATUS.md) for the verification scope and remaining work.
